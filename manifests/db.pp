@@ -1,7 +1,7 @@
 # See README.md for details.
 define mysql::db (
   $user,
-  $password,
+  $password       = undef,
   $dbname         = $name,
   $charset        = 'utf8',
   $collate        = 'utf8_general_ci',
